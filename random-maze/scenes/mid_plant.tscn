@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://biubweofp8m60"]
+
+[ext_resource type="Script" uid="uid://ct5v54uyrsk8i" path="res://scripts/mid_plant.gd" id="1_whp7b"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gin25"]
+radius = 65.00769
+
+[node name="mid_plant" type="Area2D" unique_id=806694910]
+script = ExtResource("1_whp7b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=64986249]
+shape = SubResource("CircleShape2D_gin25")
+
+[node name="Timer" type="Timer" parent="." unique_id=590057811]
+wait_time = 0.1
+autostart = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=892393459]
+unique_name_in_owner = true
+visible = false
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+color = Color(0.6774772, 0.2338461, 0.35155082, 1)
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
