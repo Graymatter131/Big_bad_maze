@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bj7iquieo8v5" path="res://scripts/main.gd" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://irkr6e0pjwn6" path="res://scenes/spanwer.tscn" id="1_o5qli"]
-[ext_resource type="Script" uid="uid://d32tn2hdi3hbh" path="res://scenes/mid_spanwer.gd" id="3_sugp2"]
+[ext_resource type="Script" uid="uid://d32tn2hdi3hbh" path="res://scripts/mid_spanwer.gd" id="3_sugp2"]
 
 [node name="Main" type="Node2D" unique_id=1249950286]
 script = ExtResource("1_0wfyh")
@@ -28,6 +28,22 @@ offset_top = 101.0
 offset_right = 124.0
 offset_bottom = 178.0
 text = "crop 300$"
+
+[node name="Label" type="Label" parent="." unique_id=56018456]
+unique_name_in_owner = true
+offset_left = 998.0
+offset_top = -4.0000005
+offset_right = 1042.0
+offset_bottom = 19.0
+scale = Vector2(3.3444376, 3.1069431)
+text = "dfgdg"
+
+[node name="space_ship_part" type="Button" parent="." unique_id=1698886100]
+unique_name_in_owner = true
+offset_left = 13.0
+offset_top = 191.0
+offset_right = 118.0
+offset_bottom = 223.0
 
 [connection signal="pressed" from="45$" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="300$ button" to="." method="_on_button_pressed"]

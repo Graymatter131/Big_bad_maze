@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c6iwtcm6l2joa"]
+
+[ext_resource type="Script" uid="uid://d32tn2hdi3hbh" path="res://scripts/mid_spanwer.gd" id="1_hl8db"]
+
+[node name="mid_spanwer" type="Node2D" unique_id=42898805]
+script = ExtResource("1_hl8db")
