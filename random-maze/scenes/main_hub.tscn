@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cuocu84yjthcx"]
+
+[ext_resource type="Script" uid="uid://djaoj0x8vi036" path="res://scripts/main_hub.gd" id="1_oa6wl"]
+[ext_resource type="PackedScene" uid="uid://b7sj6pjyim6fv" path="res://scenes/character_body_2d.tscn" id="2_3rplo"]
+[ext_resource type="PackedScene" uid="uid://dtbnqhou5lsyr" path="res://scenes/block_wall_spawner.tscn" id="3_edbvw"]
+
+[node name="Main_hub" type="Node2D" unique_id=2126527659]
+script = ExtResource("1_oa6wl")
+
+[node name="CharacterBody2D" parent="." unique_id=442073573 instance=ExtResource("2_3rplo")]
+
+[node name="block_wall_spawner" parent="." unique_id=129947358 instance=ExtResource("3_edbvw")]
