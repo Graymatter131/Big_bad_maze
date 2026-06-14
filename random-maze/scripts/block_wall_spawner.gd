@@ -4,7 +4,9 @@ var moves_y = 600
 var moves_y_checker = 0
 var em = preload("res://scenes/basic_block.tscn")
 var spawn_location = 70
-const rows = 10
+var rows = 10
+
+
 
 signal points_up
 
@@ -33,8 +35,11 @@ func mid_plant_wall():
 			moves_y += 100
 		moves_y_checker += 1
 		if moves_y_checker == rows:
-			moves_y = 100
 			moves_y_checker = 0
+func moves_the_wall_up():
+	if moves_y_checker == rows:
+		moves_y = 100
+		
 			
 func walls_on_walls():
 	position.y -= 100

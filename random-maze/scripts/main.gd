@@ -1,5 +1,5 @@
 extends Node2D
-var money = 
+var money = 0
 var ship_parts_price = 1000
 func _ready() -> void:
 	%basic_spanwer.points_up.connect(points)

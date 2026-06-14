@@ -32,3 +32,7 @@ func mid_plant_wall():
 	#wall()
 func hi():
 	points_up.emit()
+
+
+func _on_timer_timeout() -> void:
+	mid_plant_wall()

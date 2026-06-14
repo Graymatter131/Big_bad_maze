@@ -4,3 +4,8 @@
 
 [node name="mid_spanwer" type="Node2D" unique_id=42898805]
 script = ExtResource("1_hl8db")
+
+[node name="Timer" type="Timer" parent="." unique_id=763971299]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
