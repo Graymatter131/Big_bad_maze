@@ -4,3 +4,8 @@
 
 [node name="spanwer" type="Node2D" unique_id=42898805]
 script = ExtResource("1_nm1ae")
+
+[node name="Timer" type="Timer" parent="." unique_id=689822551]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

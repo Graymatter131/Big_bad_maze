@@ -12,7 +12,7 @@ func _ready() -> void:
 
 func mid_plant_wall():
 	for n in 60:
-		
+		var idk = 0
 		spot += 100
 		var bt = em.instantiate()
 		bt.position = Vector2(spot+20,moves_the_player_up)
@@ -25,7 +25,8 @@ func mid_plant_wall():
 		moves_the_player_up_checker += 1
 		if moves_the_player_up_checker == 60:
 			moves_the_player_up = 100
-			moves_the_player_up_checker = 0
+			idk += 100
+			moves_the_player_up_checker = idk
 
 
 #func _on_button_pressed() -> void:

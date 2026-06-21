@@ -8,7 +8,7 @@ func _ready() -> void:
 	
 	
 func adding_more_wall():
-	$block_wall_spawner.walls_on_walls()
+
 	$block_wall_spawner.mid_plant_wall()
 	
 	jo += 1

@@ -11,7 +11,9 @@ func _ready() -> void:
 	basic_plant_wall()
 
 func basic_plant_wall():
-	for n in 60:
+	for n in 10:
+		var idk = 0
+		
 		
 		spot += 100
 		var bt = em.instantiate()
@@ -23,12 +25,18 @@ func basic_plant_wall():
 			spot = 0
 			moves_the_player_up += 70
 		moves_the_player_up_checker += 1
-		if moves_the_player_up_checker == 60:
+		if moves_the_player_up_checker == 10:
 			moves_the_player_up = 100
-			moves_the_player_up_checker = 0
-
+			idk += 100
+			moves_the_player_up_checker = idk
+			
 
 #func _on_button_pressed() -> void:
 	#wall()
 func hi():
 	points_up.emit()
+
+
+func _on_timer_timeout() -> void:
+	
+	basic_plant_wall()
