@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://c3qka6edh4l8c"]
+
+[ext_resource type="Script" uid="uid://bs0ongs7qgmyg" path="res://enemy.gd" id="1_7p1mj"]
+[ext_resource type="Script" uid="uid://dbuldicys7204" path="res://scripts/stats.gd" id="2_md0e3"]
+
+[sub_resource type="Resource" id="Resource_4ra3w"]
+script = ExtResource("2_md0e3")
+metadata/_custom_type_script = "uid://dbuldicys7204"
+
+[node name="Enemy" type="Sprite2D" unique_id=162713476]
+script = ExtResource("1_7p1mj")
+stats = SubResource("Resource_4ra3w")

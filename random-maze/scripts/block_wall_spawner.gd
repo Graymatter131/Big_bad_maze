@@ -6,6 +6,7 @@ var em = preload("res://scenes/basic_block.tscn")
 var spawn_location = 70
 var rows = 10
 
+
 signal points_up
 
 
